@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #D8D8D8;
+}
+
+header {
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    height: 100% ;
+    margin: 0 auto;
+    background-color: #fff;
+    
+}
+
+.shadow {
+    box-shadow: 30px 0 50px rgba(0, 0, 0, 0.1),
+    -30px 0 50px rgba(0, 0, 0, 0.1),
+    0 30px 50px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3rem auto;
+    line-height: 2.5rem;
+    width: 50%;
+    height: 2.5rem;
+    display: block;
+    color: black;
+    border: 1px solid #E0E0E0;
+    border-radius: 50px;
+}
+
+.backgroundColorDark {
+    background-color: #333;
+}
+
+.backgroundColorLight {
+    background-color: #eee;
+}
+
+.h10vh {
+    height: 10vh;
+}
+
+.h15vh {
+    height: 15vh;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* 1st page */
+
+header .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header .container .landing-text {
+    margin: auto auto;
+}
+
+header .container .landing-text h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+header .container .landing-text h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    font-weight: 100;
+    color: #888897;
+}
+
+
+header .container .landing-photo {
+    background: url(https://source.unsplash.com/De8wMYoSSBc) no-repeat center center/cover;
+}
+
+/* 2nd page */
+
+#ourWork .container .splitter .ourWorkHeader{
+    width: 10rem;
+    position: relative;
+    top: 3vh;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    font-weight: 200;
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
+}
+
+#ourWork .container .img1{
+    height: 50vh;
+    background: url(https://source.unsplash.com/1600x900/?nature,water) no-repeat center center/cover;
+}
+
+#ourWork .container .splitter .photoHeader {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#ourWork .container .splitter > p {
+    text-align: center;
+}
+
+#ourWork .container .img2 {
+    height: 50vh;
+    background: url(https://source.unsplash.com/1600x900/?nature,trees) no-repeat center center/cover;
+}
+
+#ourWork .container .img3 {
+    height: 50vh;
+    background: url(https://source.unsplash.com/1600x900/?nature,flowers) no-repeat center center/cover;
+}
+
+#ourWork .container .img4 {
+    height: 50vh;
+    background: url(https://source.unsplash.com/1600x900/?nature,animals) no-repeat center center/cover;
+}
+
+#ourWork .container .img5 {
+    height: 50vh;
+    background: url(https://source.unsplash.com/1600x900/?nature,clouds) no-repeat center center/cover;
+}
+
+/* Footer */
+
+footer .container {
+    background-color: #D8D8D8;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer .container h2 {
+    font-size: 2.5rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+footer .container p {
+    line-height: 2rem;
+}
+
+@media (max-width: 500px){
+    .container {
+        width: 100%;
+        
+    }
+
+    header .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .container .landing-photo {
+        display: none;
+    }
+
+    .h15vh {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    #ourWork .container .splitter .photoHeader {
+        padding-top: 5vh;
+        padding-bottom: 0.5rem;
+    }
+
+    #ourWork .container .splitter .ourWorkHeader {
+        top: 4vh;
+    }
+}
